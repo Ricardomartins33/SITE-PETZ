@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css ">
+    <title>we care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./img/img-petz.png" alt="imagem logo" class="logo">
+        <div class="menu-container">
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="O que seu pet precisa?" class="input-search">
+
+            </div>
+
+
+            <nav class="menu">
+                <ul>
+
+                    <li class="item">
+                        <a href="#">Cachorros</a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="#" onclick="carregarProdutos('subpaginas/todos-produtos.html'); return false;">
+                                    Todos os Produtos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="carregarProdutos('subpaginas/racao-cachorro.html'); return false;">
+                                    Ração
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" onclick="carregarProdutos('subpaginas/racao-premium.html'); return false;">
+                                    Ração premium
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    onclick="carregarProdutos('subpaginas/brinquedos-cachorro.html'); return false;">
+                                    Brinquedos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    onclick="carregarProdutos('subpaginas/acessorios-cachorro.html'); return false;">
+                                    Acessórios
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="item">
+                        <a href="#">Gatos</a>
+                        <ul class="submenu">
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/racao-gatos.html'); return false;">Ração</a>
+                            </li>
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/areia-gatos.html'); return false;">Areia</a>
+                            </li>
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/brinquedos-gatos.html'); return false;">Brinquedos</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="item">
+                        <a href="#">Peixes</a>
+                        <ul class="submenu">
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/racao-peixes.html'); return false;">Ração</a>
+                            </li>
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/aquarios-peixes.html'); return false;">Aquários</a>
+                            </li>
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/filtros-peixes.html'); return false;">Filtros</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="item">
+                        <a href="#">Pássaros</a>
+                        <ul class="submenu">
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/racao-pássaros.html'); return false;">Ração</a>
+                            </li>
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/gaiolas-pássaros.html'); return false;">Gaiolas</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="item">
+                        <a href="#">Roedores</a>
+                        <ul class="submenu">
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/racao-roedores.html'); return false;">Ração</a>
+                            </li>
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/serragem-roedores.html'); return false;">Serragem</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="item">
+                        <a href="#">Acessórios</a>
+                        <ul class="submenu">
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/coleiras.html'); return false;">Coleiras</a>
+                            </li>
+                            <li><a href="#" onclick="carregarProdutos('subpaginas/camas.html'); return false;">Camas</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="item">
+                        <a href="#">Promoções</a>
+                        <ul class="submenu">
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/ofertas-dia.html'); return false;">Ofertas do
+                                    dia</a></li>
+                            <li><a href="#"
+                                    onclick="carregarProdutos('subpaginas/descontos.html'); return false;">Descontos</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+
+
+            <div class="button-container">
+
+                <button class="button">Entrar</button>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <main>
+            <section class="banner">
+
+                <div class="slider">
+
+                    <img src="./img/telaprincipal.png" alt="Banner 1" class="slide">
+                    <img src="./img/segundaslide.png" alt="Banner 2" class="slide">
+                    <img src="./img/terceiraimg.png" alt="Banner 3" class="slide">
+                    <img src="./img/quartaimgslide.png" alt="Banner 4" class="slide">
+                </div>
+
+            </section>
+        </main>
+        <section id="servicos" class="services-section">
+            <h2>Serviços</h2>
+
+            <div class="services-container">
+
+                <div onclick="carregarProdutos('subpaginas/banho-tosa.html'); return false;" class="service-card">
+
+                    <i class="fa-solid fa-bath"></i>
+                    <h3>Banho & Tosa</h3>
+
+                    <p>Deixe seu pet limpo, cheiroso e bem cuidado com nossos profissionais especializados.</p>
+
+                </div>
+                
+
+                
+                <div onclick="carregarProdutos('subpaginas/atendimento-veterinario.html'); return false;" class="service-card">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <h3>Atendimento Veterinário</h3>
+
+                    <p>Cuidamos da saúde do seu pet com consultas e acompanhamento especializado.</p>
+
+                </div>
+
+                <div onclick="carregarProdutos('subpaginas/adestramento.html'); return false;" class="service-card">
+                    <i class="fa-solid fa-dog"></i>
+                    <h3>Adestramento</h3>
+
+                    <p>Treinamento para melhorar o comportamento e fortalecer a relação com seu pet.</p>
+
+                </div>
+
+                <div onclick="carregarProdutos('subpaginas/entrega-rapida.html'); return false;" class="service-card">
+                    <i class="fa-solid fa-truck"></i>
+                    <h3>Entrega Rápida</h3>
+
+                    <p>Receba tudo que seu pet precisa com rapidez e segurança na sua casa.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section>
+           <h2 id="titulo-pagina">Produtos</h2>
+            <div class="products-container" id="area-produtos">
+                <div class="box-content ">
+                    <img src="./img/raçao pequena.png" alt="imagem produto 1" class="img-product">
+                    <h3>Ração</h3>
+                    <p>Mantenha seu pet saudável com nossa ração de alta qualidade, formulada com ingredientes naturais
+                        e saborosos.</p>
+                    <div class="actions">
+                        <span class="price">
+                            <span class="new-price">R$ 99,90</span>
+                            <span class="old-price">R$ 120,00</span>
+                        </span>
+                        <div class="action">
+                            <button class="button-product">COMPRAR</button>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="box-content ">
+                    <img src="./img/raçaoformulaideal.png" alt="imagem produto 2" class="img-product">
+                    <h3>Ração Especial</h3>
+                    <p> Nossa ração alta qualidade é formulada com ingredientes de que vai deixar seu pet lindo e com
+                        saúde e qualidade.
+                        qualidade.
+                    </p>
+                    <div class="actions">
+
+                        <span class="price">
+                            <span class="new-price">R$ 89,90</span>
+                            <span class="old-price">R$ 110,00</span>
+                        </span>
+                        <div class="action">
+                            <button class="button-product">COMPRAR</button>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="box-content ">
+                    <img src="./img/premiertop.png" alt="imagem produto 3" class="img-product">
+                    <h3> Raçao Especial </h3>
+                    <p>Mantenha seu pet saudável com nossa ração de alta qualidade, formulada com ingredientes naturais
+                        e saborosos.</p>
+                    <div class="actions">
+                        <span class="price">
+                            <span class="new-price">R$ 70,90</span>
+                            <span class="old-price">R$ 90,00</span>
+                        </span>
+                        <div class="action">
+                            <button class="button-product">COMPRAR</button>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-content ">
+                    <img src="./img/racaopremier.png" alt="imagem produto 4" class="img-product">
+                    <h3> Ração Especial </h3>
+                    <p>seu pet merece o melhor, e nossos petiscos são feitos com ingredientes naturais e saborosos para
+                        agradar.
+                    </p>
+                    <div class="actions">
+                        <span class="price">
+                            <span class="new-price">R$ 59,90</span>
+                            <span class="old-price">R$ 79,90</span>
+                        </span>
+                        <div class="action">
+                            <button class="button-product">COMPRAR</button>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-content ">
+                    <img src="./img/raçaoprimeespcial.png" alt="imagem produto 4" class="img-product">
+                    <h3> Raçao Premium</h3>
+                    <p>Alimente seu pet com a melhor nutrição. Nossa ração premium é formulada com ingredientes de alta
+                        qualidade.
+                    </p>
+                    <div class="actions">
+                        <span class="price">
+                            <span class="new-price">R$ 159,90</span>
+                            <span class="old-price">R$ 199,90</span>
+                        </span>
+                        <div class="action">
+                            <button class="button-product">COMPRAR</button>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-content ">
+                    <img src="./img/racaoprime.png" alt="imagem produto 4" class="img-product">
+                    <h3> Raçao Premium</h3>
+                    <p>Alimente seu pet com a melhor nutrição. Nossa ração premium é formulada com ingredientes de alta
+                        qualidade.
+                    </p>
+                    <div class="actions">
+                        <span class="price">
+                            <span class="new-price">R$ 177,95</span>
+                            <span class="old-price">R$ 229,90</span>
+                        </span>
+                        <div class="action">
+                            <button class="button-product">COMPRAR</button>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-content ">
+                    <img src="./img/premiernatu.png" alt="imagem produto 4" class="img-product">
+                    <h3> Raçao Premium</h3>
+                    <p>Alimente seu pet com a melhor nutrição. Nossa ração premium é formulada com ingredientes de alta
+                        qualidade.
+                    </p>
+                    <div class="actions">
+                        <span class="price">
+                            <span class="new-price">R$ 169,90</span>
+                            <span class="old-price">R$ 189,90</span>
+                        </span>
+                        <div class="action">
+                            <button class="button-product">COMPRAR</button>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-content ">
+                    <img src="./img/formulanatural.png" alt="imagem produto 4" class="img-product">
+                    <h3> Formula Natural</h3>
+                    <p>Formula Natural. Nossa ração natural é formulada com ingredientes de alta
+                        qualidade com graos integrais, proteinas.
+                    </p>
+                    <div class="actions">
+                        <span class="price">
+                            <span class="new-price">R$ 199,90</span>
+                            <span class="old-price">R$ 249,90</span>
+                        </span>
+                        <div class="action">
+                            <button class="button-product">COMPRAR</button>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="social-media">
+            <h3>Redes sociais</h3>
+
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="contact-info">
+            <h3>Contato</h3>
+            <p>Tel:(11) 964059768 | email: petz@wecare.com</p>
+            <p>Pet Center Comércio Participações S/A - CNPJ 14.18.11/0016-55 -
+                Endereço: Rua sargento nobre, 123 - São Paulo/SP</p>
+            <p>Copyright© 2026 Pet Center Comércio e Participações S/A - Todos os direitos reservados - v0.61.1</p>
+        </div>
+        <div class="payment-methods">
+            <h3>Formas de pagamento</h3>
+            <img src="./img/icons8-visa-50.png" alt="Visa">
+            <img src="./img/discover-50.png" alt="Discover">
+            <img src="./img/icons8-mastercard-50.png" alt="mastercard">
+            <img src="./img/icons8-diners-club-50.png" alt="Dinersclub">
+
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
